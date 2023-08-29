@@ -58,7 +58,7 @@ export default function SignUp() {
                         sm={4}
                         md={7}
                         sx={{
-                            backgroundImage: 'url(assets/girl-with-laptop-light.png)',
+                            backgroundImage: 'url(/assets/girl-with-laptop-light.png)',
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'contain',
                             backgroundPosition: 'center',

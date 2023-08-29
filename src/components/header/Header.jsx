@@ -61,12 +61,12 @@ export default function Header() {
           <Moon className='icon' size={24} />
           <SquaresFour className='icon' size={24} />
           <Bell className='icon' size={24} />
-          <img src="assets/avatar.png" alt="avatar" onClick={() => setShowUserMenu(true)} />
+          <img src="/assets/avatar.png" alt="avatar" onClick={() => setShowUserMenu(true)} />
         </div>
         {showUserMenu && <div className='backdrop' style={{ backgroundColor: 'transparent' }} onClick={() => setShowUserMenu(false)}></div>}
         {showUserMenu && <div className='header--userMenu'>
             <div className='header--userMenu--top'>
-              <img src="assets/avatar.png" alt="avatar" />
+              <img src="/assets/avatar.png" alt="avatar" />
               <div>
                 <p className='userName'>John Doe</p>
                 <p>Admin</p>

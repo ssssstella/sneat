@@ -64,7 +64,7 @@ export default function LogIn() {
             sm={4}
             md={7}
             sx={{
-              backgroundImage: 'url(assets/boy-with-rocket-light.png)',
+              backgroundImage: 'url(/assets/boy-with-rocket-light.png)',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'contain',
               backgroundPosition: 'center',

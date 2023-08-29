@@ -29,7 +29,7 @@ export default function DrawTimeline({data}) {
                         <p className='timeline--box--title'>{data[0].title}</p>
                         <p>{data[0].content.desc}</p>
                         <div className='timeline--box--attachment'>
-                            <img src={`assets/timeline/${data[0].content.icon}`} alt={data[0].content.icon} />
+                            <img src={`/assets/timeline/${data[0].content.icon}`} alt={data[0].content.icon} style={{height: '30px'}}/>
                             <span>{data[0].content.attachment}</span>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ export default function DrawTimeline({data}) {
                         <p className='timeline--box--title'>{data[1].title}</p>
                         <p>{data[1].content.desc}</p>
                         <div className='timeline--box--attachment'>
-                            <Avatar src={`assets/timeline/${data[1].content.members[0].icon}`} alt={data[1].content.members[0].icon} />
+                            <Avatar src={`/assets/timeline/${data[1].content.members[0].icon}`} alt={data[1].content.members[0].icon} />
                             <span>
                                 <p className='timeline--box--title'>{data[1].content.members[0].name}</p>
                                 <p>{data[1].content.members[0].position}</p>
@@ -67,7 +67,7 @@ export default function DrawTimeline({data}) {
                         <div className='timeline--box--attachment'>
                             <AvatarGroup >
                                 {data[2].content.members.map(item => {
-                                    return <Avatar src={`assets/timeline/${item.icon}`} alt={item.name} key={item.name}/>
+                                    return <Avatar src={`/assets/timeline/${item.icon}`} alt={item.name} key={item.name}/>
                                 })}
                             </AvatarGroup>
                         </div>

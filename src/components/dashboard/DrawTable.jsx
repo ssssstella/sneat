@@ -5,7 +5,7 @@ import LinearProgress from './LinearProgress';
 function createData(id, type, vsts, pcrt, color, icon) {
   const visits = vsts > 1000 ? `${(vsts / 1000).toFixed(2)}k` : `${vsts}`;
   const percent = (pcrt * 100).toFixed(2);
-  const img = `assets/distribution/${icon}`;
+  const img = `/assets/distribution/${icon}`;
   return { id, type, visits, percent, color, img };
 }
 
@@ -43,7 +43,7 @@ export default function DrawTable({type, data}) {
               <TableCell component="th" scope="row" width="10%">
                 {row.id}
               </TableCell>
-              <TableCell align="left" width="20%"><img src={row.img} alt={row.type} />{row.type}</TableCell>
+              <TableCell align="left" width="20%" sx={{display: 'flex', alignItems: 'center'}}><img src={row.img} alt={row.type} style={{height: '25px', marginRight: '8px'}}/>{row.type}</TableCell>
               <TableCell align="left" width="20%">{row.visits}</TableCell>
               <TableCell align="left" width="50%"><LinearProgress percent={Number(row.percent)} color={row.color} /></TableCell>
             </TableRow>

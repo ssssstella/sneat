@@ -32,8 +32,6 @@ h5 {
   margin-left: 80px;
   padding: 0.5rem 1.25rem;
   transition: 2s;
-  border: 1px solid blue;
-  border: none;
   transition: 1s;
 }
 
@@ -46,8 +44,6 @@ h5 {
   width: 100%;
   max-width: 1350px;
   margin: 8px auto;
-  border: 1px solid purple;
-  border: none;
 }
 
 .backdrop {
@@ -285,6 +281,10 @@ h5 {
   justify-content: space-between;
 }
 
+.analytics .display5--chart span {
+  width: 70%;
+}
+
 .analytics .display6 {
   padding: 20px 0;
 }
@@ -302,6 +302,8 @@ h5 {
 
 .analytics .display6--tab--content img {
   margin: 0 0.8rem 0 1rem;
+  width: 50px;
+  height: 50px;
 }
 
 .analytics .display6--tab--content div {
@@ -334,7 +336,7 @@ h5 {
 .analytics .display7--content .timeline--box--attachment {
   display: flex;
   align-items: center;
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 0.5rem 0 1.2rem 0;
 }
 
 .analytics .display7--content .timeline--box--attachment span {

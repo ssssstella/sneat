@@ -17,7 +17,6 @@ import {
 
 import axios from 'axios';
 
-// import data from "../../data";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -39,14 +38,14 @@ export default function Analytics() {
 
   const [data, setData] = React.useState();
 
-    React.useEffect(() => {
-      axios.get('https://sneatvercel.vercel.app/api/dashboard/analytics').then(response => {
-        // console.log('fetching dashboard', response.data);
-        setData(response.data.data.content);
-      }).catch(err => {
-        console.log(err);
-      })
-    }, []);
+  React.useEffect(() => {
+    axios.get('https://sneatvercel.vercel.app/api/dashboard/analytics').then(response => {
+      // console.log('fetching dashboard', response.data);
+      setData(response.data.data.content);
+    }).catch(err => {
+      console.log(err);
+    })
+  }, []);
 
   const [tab1Value, setTab1Value] = React.useState(0);
   const handleTab1Change = (event, newValue) => {
@@ -68,7 +67,7 @@ export default function Analytics() {
               <p>You have done 72% more sales today. Check your new badge in your profile.</p>
               <button>VIEW BADGES</button>
             </div>
-            <img className='analytics--banner--img' src="assets/illustration-john-light.png" alt="illustration-john" />
+            <img className='analytics--banner--img' src="/assets/illustration-john-light.png" alt="illustration-john" />
           </Item>
         </Grid>
         <Grid item xs={12} md={4} className='insertion1'>
@@ -89,7 +88,7 @@ export default function Analytics() {
             <Grid item xs={6} md={12} lg={6}>
               <Item sx={{ height: 180 }} className='display2'>
                 <div>
-                  <img src="assets/iconwithbg/folder-with-bg.png" alt="icon" />
+                  <img src="/assets/iconwithbg/folder-with-bg.png" alt="icon" />
                   <MoreVert className='icon' />
                 </div>
                 <p>Sales</p>
@@ -157,7 +156,7 @@ export default function Analytics() {
             <Grid item xs={6}>
               <Item sx={{ height: 180 }} className='display2'>
                 <div>
-                  <img src="assets/iconwithbg/paypal-with-bg.png" alt="icon" />
+                  <img src="/assets/iconwithbg/paypal-with-bg.png" alt="icon" />
                   <MoreVert className='icon' />
                 </div>
                 <p>Payments</p>
@@ -297,7 +296,7 @@ export default function Analytics() {
             <TabPanel value={tab1Value} index={0}>
               <div className='display6--tab--content'>
                 <div>
-                  <img src="assets/iconwithbg/wallet-with-bg.png" alt="icon" />
+                  <img src="/assets/iconwithbg/wallet-with-bg.png" alt="icon" />
                   <span>
                     <p>Total Income</p>
                     <div>
@@ -330,7 +329,7 @@ export default function Analytics() {
             <TabPanel value={tab1Value} index={1}>
               <div className='display6--tab--content'>
                 <div>
-                  <img src="assets/iconwithbg/paypal-with-bg.png" alt="icon" />
+                  <img src="/assets/iconwithbg/paypal-with-bg.png" alt="icon" />
                   <span>
                     <p>Total Expense</p>
                     <div>
@@ -363,7 +362,7 @@ export default function Analytics() {
             <TabPanel value={tab1Value} index={2}>
               <div className='display6--tab--content'>
                 <div>
-                  <img src="assets/iconwithbg/vertical-wallet-with-bg.png" alt="icon" />
+                  <img src="/assets/iconwithbg/vertical-wallet-with-bg.png" alt="icon" />
                   <span>
                     <p>Total profit</p>
                     <div>
@@ -404,18 +403,18 @@ export default function Analytics() {
             <div className='display5--content' style={{ height: '420px' }}>
               {data.transactions.map((item, idx) => {
                 return <div className='display5--content--card' key={idx}>
-                          <div>
-                            <img src={`assets/transactions/${item.icon}`} alt={item.type} />
-                            <span>
-                              <strong><p>{item.type}</p></strong>
-                              <p>{item.desc}</p>
-                            </span>
-                          </div>
-                          <div>
-                            <h5>{item.amount}</h5>
-                            <h5>USD</h5>
-                          </div>
-                      </div>
+                  <div>
+                    <img src={`/assets/transactions/${item.icon}`} alt={item.type} />
+                    <span>
+                      <strong><p>{item.type}</p></strong>
+                      <p>{item.desc}</p>
+                    </span>
+                  </div>
+                  <div>
+                    <h5>{item.amount}</h5>
+                    <h5>USD</h5>
+                  </div>
+                </div>
               })}
             </div>
           </Item>
@@ -427,7 +426,7 @@ export default function Analytics() {
               <MoreVert className='icon' />
             </div>
             <div className='display7--content' style={{ height: '420px' }}>
-              <DrawTimeline data={data.activity}/>
+              <DrawTimeline data={data.activity} />
             </div>
           </Item>
         </Grid>

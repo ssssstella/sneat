@@ -128,7 +128,7 @@ export default function Sidebar() {
     <Drawer className='sidebar' variant="permanent" open={open} onMouseEnter={handleDrawerOpen} onMouseLeave={handleMouseLeave}>
       <DrawerHeader className="sidebar--title">
         <div onClick={() => handle('/dashboards/analytics')}>
-          <img src="assets/logo.png" alt="logo" />
+          <img src="/assets/logo.png" alt="logo" />
           {open && <h2>sneat</h2>}
         </div>
         {open &&
