@@ -89,7 +89,7 @@ export default function Analytics() {
             <Grid item xs={6} md={12} lg={6}>
               <Item sx={{ height: 180 }} className='display2'>
                 <div>
-                  <img src="assets/folder-with-bg.png" alt="icon" />
+                  <img src="assets/iconwithbg/folder-with-bg.png" alt="icon" />
                   <MoreVert className='icon' />
                 </div>
                 <p>Sales</p>
@@ -157,7 +157,7 @@ export default function Analytics() {
             <Grid item xs={6}>
               <Item sx={{ height: 180 }} className='display2'>
                 <div>
-                  <img src="assets/paypal-with-bg.png" alt="icon" />
+                  <img src="assets/iconwithbg/paypal-with-bg.png" alt="icon" />
                   <MoreVert className='icon' />
                 </div>
                 <p>Payments</p>
@@ -405,7 +405,7 @@ export default function Analytics() {
               {data.transactions.map((item, idx) => {
                 return <div className='display5--content--card' key={idx}>
                           <div>
-                            <img src={`assets/${item.icon}`} alt={item.type} />
+                            <img src={`assets/transactions/${item.icon}`} alt={item.type} />
                             <span>
                               <strong><p>{item.type}</p></strong>
                               <p>{item.desc}</p>
