@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* layout */
+.app {
+  background-color: #F5F5F9;
+}
+
+.containerOuter {
+  width: calc(100% - 80px);
+  height: 100%;
+  margin-left: 80px;
+  padding: 0.5rem 1.25rem;
+  transition: 2s;
+  border: 1px solid blue;
+  border: none;
+  transition: 1s;
+}
+
+.sideFixed {
+  width: calc(100% - 260px);
+  margin-left: 260px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 8px auto;
+  border: 1px solid purple;
+  border: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e6e6e6bc;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* general */
+.link-pl {
+  color: #696cff;
+  text-decoration: none;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F9;
+  z-index: 2;
+}
+
+.login--title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.login--title img {
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+.login--subtitle {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.login--hint {
+  width: 100%;
+  height: 50px;
+  background-color: #e9e9ff;
+  border-radius: 5px;
+  color: #696cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login--link {
+  color: #696cff;
+  text-decoration: underline;
+}

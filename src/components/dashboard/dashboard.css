@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* layout */
+.app {
+  background-color: #F5F5F9;
+}
+
+.containerOuter {
+  width: calc(100% - 80px);
+  height: 100%;
+  margin-left: 80px;
+  padding: 0.5rem 1.25rem;
+  transition: 2s;
+  border: 1px solid blue;
+  border: none;
+  transition: 1s;
+}
+
+.sideFixed {
+  width: calc(100% - 260px);
+  margin-left: 260px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 8px auto;
+  border: 1px solid purple;
+  border: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e6e6e6bc;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* general */
+.link-pl {
+  color: #696cff;
+  text-decoration: none;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+/* analytics */
+.analytics h5, .analytics p {
+  color: rgba(50, 71, 92, 0.6);
+}
+
+.analytics .analytics--banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.analytics .analytics--banner--left {
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics .analytics--banner--left h4 {
+  color: #696cff;
+  margin-bottom: 1rem;
+}
+
+.analytics .analytics--banner--left p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.analytics .analytics--banner--left button {
+  background-color: transparent;
+  border: 1px solid #696cff;
+  border-radius: 5px;
+  color: #696cff;
+  width: 130px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.analytics .analytics--banner--img {
+  width: 200px;
+  height: 170px;
+  object-fit: contain;
+}
+
+.analytics .display1, .analytics .display2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.analytics .display1 {
+  padding: 20px 10px;
+}
+
+.analytics .display1 p, .analytics .display1 h4 {
+  margin-left: 10px;
+}
+
+.analytics .display2 div:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.analytics .display2 div:first-child img {
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
+.analytics .display2 div:first-child .icon {
+  display: block;
+}
+
+.analytics .display2 div:last-child {
+  margin-left: -5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.analytics .display3 {
+  padding: 0;
+  display: flex;
+}
+
+.analytics .display3--left {
+  width: 70%;
+  padding: 20px 10px 0 20px;
+  border-right: 1px solid rgba(50, 71, 92, 0.6);
+}
+
+.analytics .display3--left h4 {
+  margin-bottom: 1rem;
+}
+
+.analytics .display3--right {
+  width: 30%;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.analytics .display3--right h5 {
+  font-weight: 500;
+}
+
+.analytics .display3--right div {
+  display: flex;
+}
+
+.analytics .display3--right--title {
+  width: 80px;
+  border-radius: 5px;
+  border: 1px solid #696cff;
+  padding: 0.4rem 0.8rem;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+}
+
+.analytics .display3--right--stats {
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.analytics .display3--right--stats div {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.analytics .display4 {
+  display: flex;
+}
+
+.analytics .display4--left, .analytics .display4--right {
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics .display4--left {
+  width: 40%;
+  justify-content: space-between;
+}
+
+.analytics .display4--left span {
+  width: 100px;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+  color: #ffab00;
+  background-color: #ffeecc;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.analytics .display4--left div {
+  display: flex;
+  margin-left: -5px;
+}
+
+.analytics .display4--right {
+  width: 60%;
+  justify-content: center;
+}
+
+.analytics .display5 div {
+  display: flex;
+  align-items: center;
+}
+
+.analytics .display5--title {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.analytics .display5--content {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.analytics .display5--content--card {
+  width: 100%;
+  height: 60px;
+}
+
+.analytics .display5--content--card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.analytics .display5--content--card span {
+  margin-left: 0.8rem;
+}
+
+.analytics .display5--content--card span p:first-child {
+  color: rgba(50, 71, 92, 0.87);
+}
+
+.analytics .display5--content--card div:last-child {
+  margin-left: auto;
+  gap: 0.8rem;
+}
+
+.analytics .display5--content--card div:last-child h5:first-child {
+  color: rgba(50, 71, 92, 0.87);
+}
+
+.analytics .display5--chart {
+  height: 120px;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+}
+
+.analytics .display6 {
+  padding: 20px 0;
+}
+
+.analytics .display6--tab--content {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.analytics .display6--tab--content h4 {
+  color: rgba(50, 71, 92, 0.87);
+}
+
+.analytics .display6--tab--content img {
+  margin: 0 0.8rem 0 1rem;
+}
+
+.analytics .display6--tab--content div {
+  display: flex;
+  align-items: center;
+}
+
+.analytics .display6--tab--content--progress {
+  align-self: center;
+  gap: 1rem;
+}
+
+.analytics .display7--title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.analytics .display7--content .timeline--box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.analytics .display7--content .timeline--box--title {
+  color: rgba(50, 71, 92, 0.87);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.analytics .display7--content .timeline--box--attachment {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.analytics .display7--content .timeline--box--attachment span {
+  margin-left: 0.5rem;
+}
+
+.analytics .insertion1 {
+  order: -2;
+}
+
+@media (max-width: 599px) {
+  .analytics--banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .analytics--banner--left {
+    margin-top: 1rem;
+    width: 300px;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .analytics--banner--img {
+    order: -1;
+  }
+}
+
+@media (min-width: 600px) {
+  .analytics--banner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .analytics--banner--left {
+    width: 50%;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .analytics--banner--img {
+    order: 0;
+    margin-right: 5%;
+    margin-bottom: -1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .insertion2 {
+    order: -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .analytics--banner {
+    height: 180px;
+  }
+  .insertion2 {
+    order: 0;
+  }
+}

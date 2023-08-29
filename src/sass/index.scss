@@ -1,0 +1,80 @@
+$black: rgba(50, 71, 92, 0.87);
+$grey: rgba(50, 71, 92, 0.6);
+$lightgrey: rgba(50, 71, 92, 0.38);
+$purple: rgb(105, 108, 255);
+$green: rgb(113, 221, 55);
+$red: rgb(255, 62, 29);
+$orange: rgb(255, 171, 0);
+$blue: rgb(3, 195, 236);
+$bg: #F5F5F9;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* layout */
+.app {
+    background-color: $bg;
+}
+
+.containerOuter {
+    width: calc(100% - 80px);
+    height: 100%;
+    margin-left: 80px;
+    padding: 0.5rem 1.25rem;
+    transition: 2s;
+    // border: 1px solid blue;
+    transition: 1s;
+}
+
+.sideFixed {
+    width: calc(100% - 260px);
+    margin-left: 260px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 8px auto;
+    // border: 1px solid purple; 
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e6e6e6bc;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* general */
+.link-pl {
+    color: $purple;
+    text-decoration: none;
+}
+
+
+.icon {
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+@import '../../sass/index.scss';
+
+.search {
+    position: fixed;
+    top: calc(50% - 280px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 560px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+    color: $lightgrey;
+
+    &--top {
+        height: 12.5%;
+        border-bottom: 1px solid $lightgrey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            input[type='search'] {
+                border: none;
+                font-size: 1.2rem;
+                color: $black;
+            }
+    
+            input[type='search']:focus {
+                outline: none;
+                font-size: 1.2rem;
+            }
+    
+            input[type='search']:active {
+                outline: none;
+                font-size: 1.2rem;
+            }
+
+            .search--close {
+                cursor: pointer;
+            }
+    
+        }
+    }
+
+    &--bottom {
+        padding: 50px 60px;
+        display: grid;
+        grid-template: 160px 160px / 200px 200px;
+        gap: 50px;
+
+        .search--card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &Link {
+                width: 100%;
+                color: $black;
+                display: flex;
+                align-items: center;
+                gap: 0.7rem;
+                margin-left: 5px;
+            }
+
+            &Link:hover {
+                color: $purple;
+            }
+        }
+    }
+}

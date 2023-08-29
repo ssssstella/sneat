@@ -1,0 +1,65 @@
+@import '../../sass/index.scss';
+
+.sidebar {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid blue;
+
+    &--title {
+        position: relative;
+        height: 80px;
+
+        div {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 0.4rem;
+
+            img {
+                height: 50px;
+                margin-right: 0.5rem;
+            }
+        }
+
+        .sidebar--control {
+            position: absolute;
+            right: 10px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: $purple;
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+    }
+
+    &--content {
+        height: calc(100% - 80px);
+        overflow-y: scroll;
+        color: $grey;
+
+        .sectionTitle {
+            color: $lightgrey;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .sectionTitle::before {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 1px;
+            background-color: $lightgrey;
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+    }
+}

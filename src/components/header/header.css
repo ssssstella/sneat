@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* layout */
+.app {
+  background-color: #F5F5F9;
+}
+
+.containerOuter {
+  width: calc(100% - 80px);
+  height: 100%;
+  margin-left: 80px;
+  padding: 0.5rem 1.25rem;
+  transition: 2s;
+  border: 1px solid blue;
+  border: none;
+  transition: 1s;
+}
+
+.sideFixed {
+  width: calc(100% - 260px);
+  margin-left: 260px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  border: 1px solid purple;
+  border: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e6e6e6bc;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* general */
+.link-pl {
+  color: #696cff;
+  text-decoration: none;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header--left {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header--left input[type='search'] {
+  border: none;
+  font-size: 1.2rem;
+}
+
+.header--left input[type='search']:focus {
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.header--left input[type='search']:active {
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.header--left ::placeholder {
+  color: rgba(50, 71, 92, 0.38);
+}
+
+.header--right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header--right img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header--userMenu {
+  position: absolute;
+  top: 85px;
+  right: 1rem;
+  height: 370px;
+  width: 220px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.5rem 0;
+  color: rgba(50, 71, 92, 0.6);
+  box-shadow: 9px 9px 40px 2px rgba(50, 71, 92, 0.12);
+}
+
+.header--userMenu--top {
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 1rem;
+}
+
+.header--userMenu--top img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header--userMenu--top .userName {
+  color: rgba(50, 71, 92, 0.87);
+}
+
+.header--userMenu--icon {
+  color: rgba(50, 71, 92, 0.6) !important;
+}

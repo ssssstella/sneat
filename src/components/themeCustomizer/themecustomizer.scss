@@ -1,0 +1,18 @@
+@import '../../sass/index.scss';
+
+.themeIcon {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    background-color: $purple;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50vh;
+    right: 0;
+    cursor: pointer;
+}
